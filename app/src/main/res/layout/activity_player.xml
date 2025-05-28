@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Player View -->
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:controller_layout_id="@layout/custom_player_controls"
+        app:use_controller="true"/>
+
+    <!-- Custom Top Buttons -->
+    <LinearLayout
+        android:id="@+id/customTopButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/customBtnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_arrow_back"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/back"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/customBtnMenu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_more_vert"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/menu"/>
+    </LinearLayout>
+
+    <!-- Brightness control overlay (left side) -->
+    <LinearLayout
+        android:id="@+id/brightnessControl"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:paddingStart="30dp"
+        android:layout_gravity="start|center_vertical"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_brightness"
+            app:tint="#FFFFFF"/>
+
+        <com.example.gammaplayer.VerticalSeekBar
+            android:id="@+id/brightnessSeekBar"
+            android:layout_width="14dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:progressDrawable="@drawable/vertical_seekbar"
+            android:thumb="@drawable/custom_thumb"/>
+    </LinearLayout>
+
+    <!-- Volume control overlay (right side) -->
+    <LinearLayout
+        android:id="@+id/volumeControl"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="16dp"
+        android:layout_gravity="end|center_vertical"
+        android:paddingEnd="30dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_volume"
+            app:tint="#FFFFFF"/>
+
+        <com.example.gammaplayer.VerticalSeekBar
+            android:id="@+id/volumeSeekBar"
+            android:layout_width="14dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:progressDrawable="@drawable/vertical_seekbar"
+            android:thumb="@drawable/custom_thumb"/>
+    </LinearLayout>
+</FrameLayout>
