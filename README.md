@@ -1,14 +1,17 @@
 # GammaPlayer
 
-A modern Android music player application built with Jetpack Compose and ExoPlayer.
+A modern Android video player application built with Jetpack Compose and ExoPlayer.
 
-## 🎵 Features
+## 🎥 Features
 
 - Modern Material 3 UI design
-- Smooth music playback using ExoPlayer
+- Smooth video playback using ExoPlayer
 - Jetpack Compose for beautiful and responsive UI
 - Support for Android 7.0 (API 24) and above
 - Efficient media handling and playback
+- Remembers seek position
+- Volume and Brightness Sliders
+- Seek Position Slider
 
 ## 🛠️ Technical Stack
 
@@ -72,6 +75,10 @@ GammaPlayer/
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+## Planned Future Updates
+- URL play
+- Subtitles 
+- Thumbnails
 
 ## 🙏 Acknowledgments
 
