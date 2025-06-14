@@ -13,6 +13,20 @@ A modern Android video player application built with Jetpack Compose and ExoPlay
 - Volume and Brightness Sliders
 - Seek Position Slider
 
+## 📱 Screenshots
+
+### Media Picker 
+<div style="width:100%; display:flex; justify-content:space-between;">
+[<img src="Images/screenshot_Media_Picker.png" width=19% alt="Home Light">](Images/screenshot_Media_Picker.png)
+</div>
+
+### Player Ui
+
+<div style="width:100%; display:flex; justify-content:space-between;">
+
+[<img src="Images/screenshot_Player_Ui.png" width=49% alt="Player">](Images/screenshot_Player_Ui.png)
+</div>
+
 ## 🛠️ Technical Stack
 
 - **Language**: Kotlin
@@ -75,7 +89,7 @@ GammaPlayer/
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📱 Planned Future Updates
+## 🔮 Planned Future Updates
 - URL play
 - Subtitles 
 - Thumbnails
