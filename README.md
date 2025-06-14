@@ -16,9 +16,12 @@ A modern Android video player application built with Jetpack Compose and ExoPlay
 ## 📱 Screenshots
 
 ### Media Picker 
+
 <div style="width:100%; display:flex; justify-content:space-between;">
-[<img src="Images/screenshot_Media_Picker.png" width=19% alt="Home Light">](Images/screenshot_Media_Picker.png)
+
+[<img src="Images/screenshot_Media_Picker.png" width=49% alt="Home Light">](Images/screenshot_Media_Picker.png)
 </div>
+
 
 ### Player Ui
 
